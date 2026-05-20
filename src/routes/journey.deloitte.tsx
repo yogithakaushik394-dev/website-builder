@@ -45,8 +45,8 @@ function Page() {
 
       <section className="px-6 md:px-12 max-w-6xl mx-auto">
         <div className="mb-10">
-          <div className="eyebrow mb-2">My day job</div>
-          <h2 className="serif text-3xl md:text-5xl">ERP implementation.</h2>
+          <h2 className="serif text-3xl md:text-5xl">My Day Job.</h2>
+          <div className="eyebrow mt-3">ERP Implementation</div>
         </div>
         <div className="space-y-px bg-rule border border-rule">
           {roles.map((r) => (
