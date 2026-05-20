@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHeader } from "@/components/PageHeader";
 import img from "@/assets/journey-rotman.jpg";
+import imgDistinction from "@/assets/deloitte-distinction.jpg";
 
 export const Route = createFileRoute("/journey/rotman")({
   head: () => ({
@@ -15,10 +16,12 @@ export const Route = createFileRoute("/journey/rotman")({
 const chips = [
   {
     title: "Rotman Pride President",
+    image: img,
     body: "Elected President, Rotman Pride Club. Managed $10,000+ budget, secured corporate sponsorships including RBC ($3K), and led 10+ industry events including the annual Day of Pink awareness campaign, LGBTQIA+ career mentorship programming pairing students with senior leaders at financial institutions and consulting firms, and networking sessions connecting 2SLGBTQIA+ MBA students with peers across the Rotman cohort.",
   },
   {
     title: "Deloitte Distinction Program",
+    image: imgDistinction,
     body: "One of 22 students selected across Rotman, Schulich, and DeGroote for the Deloitte Distinction Program in management consulting. Won first place in the program's AI strategy case competition.",
   },
 ];
@@ -33,7 +36,7 @@ function Page() {
           {chips.map((c) => (
             <div key={c.title}>
               <div className="aspect-[4/3] overflow-hidden grain mb-5">
-                <img src={img} alt="" loading="lazy" className="w-full h-full object-cover" />
+                <img src={c.image} alt="" loading="lazy" className="w-full h-full object-cover" />
               </div>
               <h2 className="serif text-3xl md:text-4xl leading-tight mb-4">{c.title}</h2>
               <p className="text-foreground/85 leading-relaxed">{c.body}</p>

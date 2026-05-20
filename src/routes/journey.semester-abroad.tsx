@@ -1,6 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHeader } from "@/components/PageHeader";
-import img from "@/assets/journey-stgallen.jpg";
+import img1 from "@/assets/semester-abroad-1.jpg";
+import img2 from "@/assets/semester-abroad-2.jpg";
+import img3 from "@/assets/semester-abroad-3.jpg";
+import img4 from "@/assets/semester-abroad-4.jpg";
+import img5 from "@/assets/semester-abroad-5.jpg";
+import img6 from "@/assets/semester-abroad-6.jpg";
 
 export const Route = createFileRoute("/journey/semester-abroad")({
   head: () => ({
@@ -13,7 +18,7 @@ export const Route = createFileRoute("/journey/semester-abroad")({
 });
 
 function Page() {
-  const tiles = [img, img, img, img, img, img];
+  const tiles = [img1, img2, img3, img4, img5, img6];
   return (
     <article>
       <PageHeader eyebrow="Chapter 01" title="A Semester Abroad" lede="University of St. Gallen, Switzerland. Forty countries in one classroom. Nowhere to hide." />
