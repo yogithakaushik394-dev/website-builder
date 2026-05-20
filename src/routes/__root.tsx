@@ -79,6 +79,7 @@ function SiteHeader() {
       <nav className="flex gap-5 md:gap-8 text-sm">
         <Link to="/" className="hover:text-accent transition-colors">Home</Link>
         <a href={onHome ? "#journey" : "/#journey"} className="hover:text-accent transition-colors">Journey</a>
+        <a href={onHome ? "#skills" : "/#skills"} className="hover:text-accent transition-colors">Skills</a>
         <a href={onHome ? "#projects" : "/#projects"} className="hover:text-accent transition-colors">Projects</a>
       </nav>
     </header>
