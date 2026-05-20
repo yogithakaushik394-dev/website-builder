@@ -150,7 +150,7 @@ function Index() {
             <article key={p.name} className="bg-paper p-8 md:p-10 flex flex-col">
               <div className="eyebrow mb-4">Project 0{i + 1}</div>
               <h3 className="serif text-4xl mb-4">{p.name}</h3>
-              <p className="text-sm text-foreground/80 leading-relaxed flex-1">{p.desc}</p>
+              <p className="text-sm text-foreground/80 leading-relaxed flex-1 text-justify hyphens-auto">{p.desc}</p>
               {p.href && (
                 <a href={p.href} target="_blank" rel="noreferrer" className="mt-6 text-sm text-accent inline-flex items-center gap-1 hover:gap-2 transition-all">
                   Visit project <span aria-hidden>↗</span>
