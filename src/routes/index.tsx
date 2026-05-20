@@ -89,7 +89,7 @@ function Index() {
                 <Mail size={14} /> Email
               </a>
               <a
-                href="https://www.linkedin.com/in/yogithak"
+                href="/api/public/linkedin"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-4 py-2 text-xs uppercase tracking-[0.15em] border border-ink/80 hover:bg-ink hover:text-paper transition-colors"
