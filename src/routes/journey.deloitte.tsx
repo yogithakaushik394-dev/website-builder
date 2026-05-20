@@ -68,14 +68,18 @@ function Page() {
             My <span className="rainbow-text italic">gay</span> job: LGBTQIA+ Inclusion Council member.
           </h2>
         </div>
-        <ul className="space-y-6 max-w-3xl">
-          {gayJob.map((line, i) => (
-            <li key={i} className="flex gap-5 text-foreground/85 leading-relaxed text-justify hyphens-auto">
-              <span className="serif text-accent text-2xl leading-none mt-1">0{i + 1}</span>
-              <p>{line}</p>
-            </li>
-          ))}
-        </ul>
+        <div className="grid md:grid-cols-[1fr_2fr] gap-10 items-start">
+          <div className="aspect-[3/4] overflow-hidden grain">
+            <img src={imgGayJob} alt="" loading="lazy" className="w-full h-full object-cover" />
+          </div>
+          <ul className="space-y-6">
+            {gayJob.map((line, i) => (
+              <li key={i} className="text-foreground/85 leading-relaxed text-justify hyphens-auto">
+                <p>{line}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
       </section>
     </article>
   );
