@@ -50,7 +50,7 @@ const orgs = [
 function Page() {
   return (
     <article>
-      <PageHeader eyebrow="Chapter 05" title="What makes me tick." lede="Volunteering and non-profits. The work that doesn't show up on a resume but shapes the rest of it." />
+      <PageHeader eyebrow="Chapter 05" title="What makes me tick." />
       <section className="px-6 md:px-12 max-w-6xl mx-auto">
         <div className="grid md:grid-cols-2 gap-10 md:gap-14">
           {orgs.map((o) => (
