@@ -39,7 +39,7 @@ function Page() {
                 <img src={c.image} alt="" loading="lazy" className="w-full h-full object-cover" />
               </div>
               <h2 className="serif text-3xl md:text-4xl leading-tight mb-4">{c.title}</h2>
-              <p className="text-foreground/85 leading-relaxed">{c.body}</p>
+              <p className="text-foreground/85 leading-relaxed text-justify hyphens-auto">{c.body}</p>
             </div>
           ))}
         </div>
@@ -48,7 +48,7 @@ function Page() {
       <section className="px-6 md:px-12 max-w-3xl mx-auto mt-24 pt-16 border-t border-rule">
         <div className="eyebrow mb-3">Key learnings from the MBA</div>
         <h2 className="serif text-3xl md:text-4xl mb-8 leading-tight">Two things I carry forward.</h2>
-        <div className="space-y-6 text-lg leading-relaxed text-foreground/85">
+        <div className="space-y-6 text-lg leading-relaxed text-foreground/85 text-justify hyphens-auto">
           <p>
             First, push yourself out of your comfort zone. The classroom challenges, the competitions, the exchange semester pushed me to think bigger.
           </p>
