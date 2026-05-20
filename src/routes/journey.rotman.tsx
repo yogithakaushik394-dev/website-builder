@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHeader } from "@/components/PageHeader";
-import img from "@/assets/journey-rotman.jpg";
+import imgPride from "@/assets/rotman-pride.jpg";
 import imgDistinction from "@/assets/deloitte-distinction.jpg";
 
 export const Route = createFileRoute("/journey/rotman")({
@@ -16,7 +16,7 @@ export const Route = createFileRoute("/journey/rotman")({
 const chips = [
   {
     title: "Rotman Pride President",
-    image: img,
+    image: imgPride,
     body: "Elected President, Rotman Pride Club. Managed $10,000+ budget, secured corporate sponsorships including RBC ($3K), and led 10+ industry events including the annual Day of Pink awareness campaign, LGBTQIA+ career mentorship programming pairing students with senior leaders at financial institutions and consulting firms, and networking sessions connecting 2SLGBTQIA+ MBA students with peers across the Rotman cohort.",
   },
   {
