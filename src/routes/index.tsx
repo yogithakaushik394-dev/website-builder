@@ -23,8 +23,8 @@ export const Route = createFileRoute("/")({
 const journey = [
   { to: "/journey/internships", image: imgInternships, eyebrow: "2025", title: "Internships", meta: "Arterra AI · Institute for Gender and the Economy" },
   { to: "/journey/rotman", image: imgRotman, eyebrow: "2024 — 2026", title: "My Time at Rotman", meta: "University of Toronto" },
-  { to: "/journey/deloitte", image: imgDeloitte, eyebrow: "2019 — 2024", title: "Deloitte", meta: "Solution Delivery Advisor" },
   { to: "/journey/semester-abroad", image: imgStGallen, eyebrow: "Autumn 2025", title: "A Semester Abroad", meta: "University of St. Gallen, Switzerland" },
+  { to: "/journey/deloitte", image: imgDeloitte, eyebrow: "2019 — 2024", title: "Deloitte", meta: "Solution Delivery Advisor" },
   { image: imgPes, eyebrow: "2015 — 2019", title: "PES University", meta: "Bangalore, India" },
   { to: "/journey/what-makes-me-tick", image: imgCommunity, eyebrow: "Always", title: "Leadership and Community", meta: "What makes me tick" },
 ];
