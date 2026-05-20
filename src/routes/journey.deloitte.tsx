@@ -74,7 +74,8 @@ function Page() {
           </div>
           <ul className="space-y-6">
             {gayJob.map((line, i) => (
-              <li key={i} className="text-foreground/85 leading-relaxed text-justify hyphens-auto">
+              <li key={i} className="flex gap-5 text-foreground/85 leading-relaxed text-justify hyphens-auto">
+                <span className="serif text-accent text-2xl leading-none mt-1">0{i + 1}</span>
                 <p>{line}</p>
               </li>
             ))}
