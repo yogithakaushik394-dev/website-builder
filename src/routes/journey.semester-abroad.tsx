@@ -30,7 +30,7 @@ function Page() {
             </div>
           ))}
         </div>
-        <div className="max-w-2xl mx-auto space-y-6 text-lg leading-relaxed text-foreground/85">
+        <div className="space-y-6 text-lg leading-relaxed text-foreground/85 text-justify hyphens-auto">
           <p>
             I completed an exchange semester at the University of St. Gallen, Switzerland, one of Europe&rsquo;s top-ranked business schools. The program was highly selective and intensely competitive, focusing on global strategy and finance in an international MBA cohort.
           </p>
