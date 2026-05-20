@@ -17,6 +17,7 @@ const roles = [
   {
     company: "Arterra AI",
     href: "https://arterra.ai/",
+    image: imgArterra,
     dates: "August — December 2025",
     body: "I spent the fall of 2025 at Arterra AI, a Toronto-based startup focused on AI-driven due diligence for infrastructure and renewable energy projects. My work centred on understanding market gaps and building relationships with key players in the space. I conducted market research, secondary research, and competitor analysis to identify gaps in due diligence practices across infrastructure and renewable energy sectors. This work directly shaped the company's go-to-market strategy and positioning. In parallel, I built and managed an outreach pipeline of 300+ contacts across institutional investors, project developers, and financial institutions. I coordinated initial conversations and helped secure pilot engagements that validated the product direction.",
     lesson: "The best market insights come from talking to people, not just reading reports. Understanding what problems actually kept investors and developers awake at night changed how I thought about building products that solve real problems.",
