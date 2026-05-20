@@ -51,9 +51,6 @@ function Page() {
           {roles.map((r) => (
             <div key={r.title} className="bg-paper p-6 md:p-10 grid md:grid-cols-[1fr_2fr] gap-8">
               <div>
-                <div className="aspect-[4/3] overflow-hidden grain mb-4">
-                  <img src={img} alt="" loading="lazy" className="w-full h-full object-cover" />
-                </div>
                 <div className="eyebrow">{r.dates}</div>
                 <h3 className="serif text-2xl mt-2">{r.title}</h3>
               </div>
