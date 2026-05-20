@@ -22,7 +22,7 @@ const orgs = [
     role: "Marketing & Communications volunteer",
     image: imgGoodfoot,
     fit: "contain" as const,
-    body: "Volunteer supporting marketing and communications for Goodfoot, an organization advancing social impact through strategic storytelling. I developed marketing materials and case studies for their website, helping articulate the organization's mission and impact to their community.",
+    body: "Volunteer supporting marketing and communications for Goodfoot, an organization that provides meaningful employment for the neurodivergent community through a reliable, professional Courier service delivered via public transit and on foot. I developed marketing materials and case studies for their website, helping articulate the organization's mission and impact to their community.",
   },
   {
     name: "TorontoDND",
