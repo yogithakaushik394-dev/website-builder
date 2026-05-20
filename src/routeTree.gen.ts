@@ -10,33 +10,102 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as JourneyWhatMakesMeTickRouteImport } from './routes/journey.what-makes-me-tick'
+import { Route as JourneySemesterAbroadRouteImport } from './routes/journey.semester-abroad'
+import { Route as JourneyRotmanRouteImport } from './routes/journey.rotman'
+import { Route as JourneyInternshipsRouteImport } from './routes/journey.internships'
+import { Route as JourneyDeloitteRouteImport } from './routes/journey.deloitte'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const JourneyWhatMakesMeTickRoute = JourneyWhatMakesMeTickRouteImport.update({
+  id: '/journey/what-makes-me-tick',
+  path: '/journey/what-makes-me-tick',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const JourneySemesterAbroadRoute = JourneySemesterAbroadRouteImport.update({
+  id: '/journey/semester-abroad',
+  path: '/journey/semester-abroad',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const JourneyRotmanRoute = JourneyRotmanRouteImport.update({
+  id: '/journey/rotman',
+  path: '/journey/rotman',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const JourneyInternshipsRoute = JourneyInternshipsRouteImport.update({
+  id: '/journey/internships',
+  path: '/journey/internships',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const JourneyDeloitteRoute = JourneyDeloitteRouteImport.update({
+  id: '/journey/deloitte',
+  path: '/journey/deloitte',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/journey/deloitte': typeof JourneyDeloitteRoute
+  '/journey/internships': typeof JourneyInternshipsRoute
+  '/journey/rotman': typeof JourneyRotmanRoute
+  '/journey/semester-abroad': typeof JourneySemesterAbroadRoute
+  '/journey/what-makes-me-tick': typeof JourneyWhatMakesMeTickRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/journey/deloitte': typeof JourneyDeloitteRoute
+  '/journey/internships': typeof JourneyInternshipsRoute
+  '/journey/rotman': typeof JourneyRotmanRoute
+  '/journey/semester-abroad': typeof JourneySemesterAbroadRoute
+  '/journey/what-makes-me-tick': typeof JourneyWhatMakesMeTickRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/journey/deloitte': typeof JourneyDeloitteRoute
+  '/journey/internships': typeof JourneyInternshipsRoute
+  '/journey/rotman': typeof JourneyRotmanRoute
+  '/journey/semester-abroad': typeof JourneySemesterAbroadRoute
+  '/journey/what-makes-me-tick': typeof JourneyWhatMakesMeTickRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/journey/deloitte'
+    | '/journey/internships'
+    | '/journey/rotman'
+    | '/journey/semester-abroad'
+    | '/journey/what-makes-me-tick'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/journey/deloitte'
+    | '/journey/internships'
+    | '/journey/rotman'
+    | '/journey/semester-abroad'
+    | '/journey/what-makes-me-tick'
+  id:
+    | '__root__'
+    | '/'
+    | '/journey/deloitte'
+    | '/journey/internships'
+    | '/journey/rotman'
+    | '/journey/semester-abroad'
+    | '/journey/what-makes-me-tick'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  JourneyDeloitteRoute: typeof JourneyDeloitteRoute
+  JourneyInternshipsRoute: typeof JourneyInternshipsRoute
+  JourneyRotmanRoute: typeof JourneyRotmanRoute
+  JourneySemesterAbroadRoute: typeof JourneySemesterAbroadRoute
+  JourneyWhatMakesMeTickRoute: typeof JourneyWhatMakesMeTickRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,12 +117,62 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/journey/what-makes-me-tick': {
+      id: '/journey/what-makes-me-tick'
+      path: '/journey/what-makes-me-tick'
+      fullPath: '/journey/what-makes-me-tick'
+      preLoaderRoute: typeof JourneyWhatMakesMeTickRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/journey/semester-abroad': {
+      id: '/journey/semester-abroad'
+      path: '/journey/semester-abroad'
+      fullPath: '/journey/semester-abroad'
+      preLoaderRoute: typeof JourneySemesterAbroadRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/journey/rotman': {
+      id: '/journey/rotman'
+      path: '/journey/rotman'
+      fullPath: '/journey/rotman'
+      preLoaderRoute: typeof JourneyRotmanRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/journey/internships': {
+      id: '/journey/internships'
+      path: '/journey/internships'
+      fullPath: '/journey/internships'
+      preLoaderRoute: typeof JourneyInternshipsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/journey/deloitte': {
+      id: '/journey/deloitte'
+      path: '/journey/deloitte'
+      fullPath: '/journey/deloitte'
+      preLoaderRoute: typeof JourneyDeloitteRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  JourneyDeloitteRoute: JourneyDeloitteRoute,
+  JourneyInternshipsRoute: JourneyInternshipsRoute,
+  JourneyRotmanRoute: JourneyRotmanRoute,
+  JourneySemesterAbroadRoute: JourneySemesterAbroadRoute,
+  JourneyWhatMakesMeTickRoute: JourneyWhatMakesMeTickRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
