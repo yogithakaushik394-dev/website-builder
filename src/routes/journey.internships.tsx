@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHeader } from "@/components/PageHeader";
 import img from "@/assets/journey-internships.jpg";
+import imgArterra from "@/assets/journey-arterra.jpg";
 
 export const Route = createFileRoute("/journey/internships")({
   head: () => ({
