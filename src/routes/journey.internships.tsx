@@ -27,7 +27,7 @@ const roles = [
     company: "Institute for Gender and the Economy (GATE)",
     image: imgGate,
     dates: "May — August 2025",
-    body: "I spent the summer at GATE, a University of Toronto research institute advancing evidence-based insights on gender equity in business and organizations. My role was to conduct structured interviews with founders and entrepreneurs, synthesize their insights, and develop business case studies for future research and curriculum development.",
+    body: "I spent the summer of 2025 at GATE, a University of Toronto research institute advancing evidence-based insights on gender equity in business and organizations. My role was to conduct structured interviews with founders and entrepreneurs, synthesize their insights, and develop business case studies for future research and curriculum development.",
     lesson: "The assumption that social impact cannot scale is unfounded. The founders I engaged with demonstrated that meaningful solutions in gender equity can be built sustainably and at scale. This reframed my understanding of what is achievable when impact is coupled with rigorous business thinking.",
     links: [
       { label: "Case study: Access to Success", href: "https://www.rotman.utoronto.ca/faculty-and-research/research-centres/gender-economy/teaching--learning/case-studies/2026/access-to-success/" },
