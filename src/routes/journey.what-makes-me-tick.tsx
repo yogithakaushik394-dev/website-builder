@@ -4,6 +4,7 @@ import img from "@/assets/journey-community.jpg";
 import imgGoodfoot from "@/assets/org-goodfoot.png";
 import imgUandi from "@/assets/org-uandi.png";
 import imgTorontoDND from "@/assets/org-torontodnd.png";
+import imgCats from "@/assets/org-cats.jpg";
 
 export const Route = createFileRoute("/journey/what-makes-me-tick")({
   head: () => ({
@@ -41,6 +42,7 @@ const orgs = [
   {
     name: "Annex Cat Rescue",
     role: "Adoption screener · Toronto",
+    image: imgCats,
     body: "I help find the right homes for foster cats by assessing compatibility between families and animals, ensuring successful long-term placements. Previously fostered with Bangalore Cat Squad while living in India.",
   },
 ];
