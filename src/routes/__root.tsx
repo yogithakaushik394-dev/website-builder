@@ -92,7 +92,7 @@ function RootComponent() {
         <SiteHeader />
         <main className="flex-1"><Outlet /></main>
         <footer className="mt-24 px-6 md:px-12 py-8 border-t border-rule flex flex-col md:flex-row justify-between gap-2 text-xs uppercase tracking-[0.18em] text-muted-foreground">
-          <span>Wow. What a ride.</span>
+          <span></span>
           <span>Toronto · 2026</span>
         </footer>
       </div>
