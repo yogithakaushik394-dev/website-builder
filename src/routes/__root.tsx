@@ -91,8 +91,17 @@ function RootComponent() {
       <div className="min-h-screen flex flex-col">
         <SiteHeader />
         <main className="flex-1"><Outlet /></main>
-        <footer className="mt-24 px-6 md:px-12 py-8 border-t border-rule flex flex-col md:flex-row justify-between gap-2 text-xs uppercase tracking-[0.18em] text-muted-foreground">
-          <span></span>
+        <footer className="mt-24 px-6 md:px-12 py-10 border-t border-rule flex flex-col md:flex-row md:items-center justify-between gap-6 text-xs uppercase tracking-[0.18em] text-muted-foreground">
+          <a
+            href="#top"
+            onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+            className="group inline-flex items-center gap-3 hover:text-accent transition-colors"
+          >
+            <span className="inline-flex items-center justify-center w-9 h-9 rounded-full border border-rule group-hover:border-accent group-hover:-translate-y-1 transition-all">
+              <span aria-hidden className="text-base">↑</span>
+            </span>
+            Go back to the top
+          </a>
           <span>Toronto · 2026</span>
         </footer>
       </div>
