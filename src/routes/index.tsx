@@ -1,4 +1,5 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
+import { Mail, Linkedin } from "lucide-react";
 import { Chip } from "@/components/Chip";
 import portraitFormal from "@/assets/portrait-formal.jpg";
 import portraitCasual from "@/assets/portrait-casual.jpg";
@@ -78,8 +79,24 @@ function Index() {
           <div>
             <div className="eyebrow mb-6">— Hello</div>
             <h1 className="serif text-5xl md:text-7xl lg:text-8xl leading-[0.92]">
-              Engineer by training. Strategist by training. Builder by instinct.
+              Yogitha Kaushik.
             </h1>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <a
+                href="mailto:yogithakaushik394@gmail.com"
+                className="inline-flex items-center gap-2 px-4 py-2 text-xs uppercase tracking-[0.15em] border border-ink/80 hover:bg-ink hover:text-paper transition-colors"
+              >
+                <Mail size={14} /> Email
+              </a>
+              <a
+                href="https://www.linkedin.com/in/yogithak"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2 text-xs uppercase tracking-[0.15em] border border-ink/80 hover:bg-ink hover:text-paper transition-colors"
+              >
+                <Linkedin size={14} /> LinkedIn
+              </a>
+            </div>
             <div className="mt-10 space-y-6 text-lg text-foreground/85 leading-relaxed max-w-xl">
               <p>
                 I spent five years at Deloitte designing and implementing large-scale enterprise systems. Led ERP implementations across three continents, designed SAP security architecture from scratch, and automated GRC workflows.
