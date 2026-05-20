@@ -60,7 +60,7 @@ function Page() {
               </div>
               <h2 className="serif text-3xl md:text-4xl leading-tight">{o.name}</h2>
               <div className="eyebrow mt-2">{o.role}</div>
-              <p className="mt-4 text-foreground/85 leading-relaxed">{o.body}</p>
+              <p className="mt-4 text-foreground/85 leading-relaxed text-justify hyphens-auto">{o.body}</p>
               {o.href && (
                 <a href={o.href} target="_blank" rel="noreferrer" className="mt-4 inline-block text-sm text-accent hover:underline">
                   Learn more ↗

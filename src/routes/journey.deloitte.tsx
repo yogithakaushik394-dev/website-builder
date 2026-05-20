@@ -57,7 +57,7 @@ function Page() {
                 <div className="eyebrow">{r.dates}</div>
                 <h3 className="serif text-2xl mt-2">{r.title}</h3>
               </div>
-              <p className="text-foreground/85 leading-relaxed">{r.body}</p>
+              <p className="text-foreground/85 leading-relaxed text-justify hyphens-auto">{r.body}</p>
             </div>
           ))}
         </div>
@@ -72,7 +72,7 @@ function Page() {
         </div>
         <ul className="space-y-6 max-w-3xl">
           {gayJob.map((line, i) => (
-            <li key={i} className="flex gap-5 text-foreground/85 leading-relaxed">
+            <li key={i} className="flex gap-5 text-foreground/85 leading-relaxed text-justify hyphens-auto">
               <span className="serif text-accent text-2xl leading-none mt-1">0{i + 1}</span>
               <p>{line}</p>
             </li>

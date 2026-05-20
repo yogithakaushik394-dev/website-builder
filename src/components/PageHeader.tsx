@@ -8,7 +8,7 @@ export function PageHeader({ eyebrow, title, lede }: { eyebrow?: string; title: 
       </Link>
       
       <h1 className="serif text-5xl md:text-7xl lg:text-8xl leading-[0.95] mt-4 max-w-4xl">{title}</h1>
-      {lede && <p className="mt-8 text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed">{lede}</p>}
+      {lede && <p className="mt-8 text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed text-justify hyphens-auto">{lede}</p>}
     </section>
   );
 }
