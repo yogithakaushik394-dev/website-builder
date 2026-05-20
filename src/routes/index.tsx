@@ -91,7 +91,11 @@ function Index() {
               <a
                 href="https://www.linkedin.com/in/yogithak"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.open("https://www.linkedin.com/in/yogithak", "_blank", "noopener,noreferrer");
+                }}
                 className="inline-flex items-center gap-2 px-4 py-2 text-xs uppercase tracking-[0.15em] border border-ink/80 hover:bg-ink hover:text-paper transition-colors"
               >
                 <Linkedin size={14} /> LinkedIn
