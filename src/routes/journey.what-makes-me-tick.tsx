@@ -26,7 +26,7 @@ const orgs = [
   },
   {
     name: "TorontoDND",
-    role: "Steering committee member · 1,000+ member community",
+    role: "Board member · 1,000+ member community",
     href: "https://www.torontodnd.com/policies/our_team",
     image: imgTorontoDND,
     body: "TorontoDND is a vibrant community centered around Dungeons and Dragons, fostering connection, creativity, and belonging. I am advising the organization's transition to nonprofit status and shaping long-term strategy for community growth and governance. This work involves helping establish sustainable structures, clarifying organizational values, and building systems that allow the community to thrive independently.",
