@@ -41,7 +41,7 @@ const orgs = [
   },
   {
     name: "Feline Rescue",
-    role: "Adoption screener · Bangalore — Toronto",
+    role: "Bangalore · Toronto",
     image: imgCats,
     body: "I help find the right homes for foster cats at the Annex Cat Rescue, Toronto by assessing compatibility between families and animals, ensuring successful long-term placements. Previously fostered with Bangalore Cat Squad while living in India.",
   },
