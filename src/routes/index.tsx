@@ -21,7 +21,7 @@ export const Route = createFileRoute("/")({
 });
 
 const journey = [
-  { to: "/journey/semester-abroad", image: imgStGallen, eyebrow: "Spring 2026", title: "A Semester Abroad", meta: "University of St. Gallen, Switzerland" },
+  { to: "/journey/semester-abroad", image: imgStGallen, eyebrow: "Autumn 2025", title: "A Semester Abroad", meta: "University of St. Gallen, Switzerland" },
   { to: "/journey/internships", image: imgInternships, eyebrow: "2025", title: "Internships", meta: "Arterra AI · Institute for Gender and the Economy" },
   { to: "/journey/rotman", image: imgRotman, eyebrow: "2024 — 2026", title: "My Time at Rotman", meta: "University of Toronto" },
   { to: "/journey/deloitte", image: imgDeloitte, eyebrow: "2019 — 2024", title: "Deloitte", meta: "Solution Delivery Advisor" },
@@ -129,9 +129,6 @@ function Index() {
             
             <h2 className="serif text-5xl md:text-6xl leading-tight max-w-2xl">My journey so far.</h2>
           </div>
-          <p className="text-muted-foreground max-w-sm">
-            Six chapters. Three continents. One throughline: pushing into discomfort and building rooms where others can do the same.
-          </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-14">
           {journey.map((j) => (
