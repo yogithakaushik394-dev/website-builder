@@ -101,7 +101,7 @@ function Index() {
                 <Linkedin size={14} /> LinkedIn
               </a>
             </div>
-            <div className="mt-10 space-y-6 text-lg text-foreground/85 leading-relaxed max-w-xl">
+            <div className="mt-10 space-y-6 text-lg text-foreground/85 leading-relaxed max-w-xl text-justify hyphens-auto">
               <p>
                 I spent five years at Deloitte designing and implementing large-scale enterprise systems. Led ERP implementations across three continents, designed SAP security architecture from scratch, and automated GRC workflows.
               </p>
@@ -113,7 +113,7 @@ function Index() {
               </p>
             </div>
             <blockquote className="mt-12 border-l-2 border-accent pl-6 max-w-xl">
-              <p className="serif italic text-2xl md:text-3xl leading-snug text-foreground/90">
+              <p className="serif italic text-2xl md:text-3xl leading-snug text-foreground/90 text-justify hyphens-auto">
                 &ldquo;Life should not be a journey to the grave with the intention of arriving safely in a pretty and well-preserved body, but rather to skid in broadside in a cloud of smoke, thoroughly used up, totally worn out, and loudly proclaiming, &lsquo;Wow! What a ride!&rsquo;&rdquo;
               </p>
               <footer className="mt-4 text-sm text-muted-foreground">— Hunter S. Thompson</footer>
@@ -150,7 +150,7 @@ function Index() {
             <article key={p.name} className="bg-paper p-8 md:p-10 flex flex-col">
               <div className="eyebrow mb-4">Project 0{i + 1}</div>
               <h3 className="serif text-4xl mb-4">{p.name}</h3>
-              <p className="text-sm text-foreground/80 leading-relaxed flex-1">{p.desc}</p>
+              <p className="text-sm text-foreground/80 leading-relaxed flex-1 text-justify hyphens-auto">{p.desc}</p>
               {p.href && (
                 <a href={p.href} target="_blank" rel="noreferrer" className="mt-6 text-sm text-accent inline-flex items-center gap-1 hover:gap-2 transition-all">
                   Visit project <span aria-hidden>↗</span>
