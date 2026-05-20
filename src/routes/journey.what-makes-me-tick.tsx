@@ -40,10 +40,10 @@ const orgs = [
     body: "Volunteer leader, U&I Bangalore, an organization delivering after-school education to underserved children in Bangalore, India. I managed a 20-person team and oversaw program delivery, ensuring students received quality support and mentorship outside traditional school hours.",
   },
   {
-    name: "Annex Cat Rescue",
+    name: "Feline Rescue",
     role: "Adoption screener · Toronto",
     image: imgCats,
-    body: "I help find the right homes for foster cats by assessing compatibility between families and animals, ensuring successful long-term placements. Previously fostered with Bangalore Cat Squad while living in India.",
+    body: "I help find the right homes for foster cats at the Annex Cat Rescue, Toronto by assessing compatibility between families and animals, ensuring successful long-term placements. Previously fostered with Bangalore Cat Squad while living in India.",
   },
 ];
 
