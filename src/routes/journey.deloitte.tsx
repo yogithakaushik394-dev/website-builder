@@ -41,7 +41,7 @@ const gayJob = [
 function Page() {
   return (
     <article>
-      <PageHeader eyebrow="Chapter 03" title="Deloitte" />
+      <PageHeader title="Deloitte" lede="What I learnt in 5 years" />
 
       <section className="px-6 md:px-12 max-w-6xl mx-auto">
         <div className="mb-10">
