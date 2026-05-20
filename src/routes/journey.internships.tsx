@@ -43,7 +43,7 @@ function Page() {
           <div key={r.company} className="grid md:grid-cols-[1fr_1.4fr] gap-8 md:gap-12 pb-16 border-b border-rule last:border-0">
             <div>
               <div className="aspect-[4/5] overflow-hidden grain mb-4">
-                <img src={img} alt={r.company} loading="lazy" className="w-full h-full object-cover" />
+                <img src={r.image ?? img} alt={r.company} loading="lazy" className="w-full h-full object-cover" />
               </div>
               <div className="eyebrow">{r.dates}</div>
               <h2 className="serif text-3xl md:text-4xl mt-2 leading-tight">{r.company}</h2>
