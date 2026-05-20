@@ -3,6 +3,7 @@ import { PageHeader } from "@/components/PageHeader";
 import img from "@/assets/journey-community.jpg";
 import imgGoodfoot from "@/assets/org-goodfoot.png";
 import imgUandi from "@/assets/org-uandi.png";
+import imgTorontoDND from "@/assets/org-torontodnd.png";
 
 export const Route = createFileRoute("/journey/what-makes-me-tick")({
   head: () => ({
@@ -26,6 +27,7 @@ const orgs = [
     name: "TorontoDND",
     role: "Steering committee member · 1,000+ member community",
     href: "https://www.torontodnd.com/policies/our_team",
+    image: imgTorontoDND,
     body: "TorontoDND is a vibrant community centered around Dungeons and Dragons, fostering connection, creativity, and belonging. I am advising the organization's transition to nonprofit status and shaping long-term strategy for community growth and governance. This work involves helping establish sustainable structures, clarifying organizational values, and building systems that allow the community to thrive independently.",
   },
   {
