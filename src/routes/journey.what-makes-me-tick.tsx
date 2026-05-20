@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { PageHeader } from "@/components/PageHeader";
 import img from "@/assets/journey-community.jpg";
 import imgGoodfoot from "@/assets/org-goodfoot.png";
+import imgUandi from "@/assets/org-uandi.png";
 
 export const Route = createFileRoute("/journey/what-makes-me-tick")({
   head: () => ({
@@ -31,6 +32,8 @@ const orgs = [
     name: "U&I Bangalore",
     role: "Volunteer leader",
     href: "https://uandi.org.in/",
+    image: imgUandi,
+    fit: "contain" as const,
     body: "Volunteer leader, U&I Bangalore, an organization delivering after-school education to underserved children in Bangalore, India. I managed a 20-person team and oversaw program delivery, ensuring students received quality support and mentorship outside traditional school hours.",
   },
   {
