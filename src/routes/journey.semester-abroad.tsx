@@ -21,7 +21,7 @@ function Page() {
   const tiles = [img1, img2, img3, img4, img5, img6];
   return (
     <article>
-      <PageHeader eyebrow="Chapter 01" title="A Semester Abroad" lede="University of St. Gallen, Switzerland. Forty countries in one classroom. Nowhere to hide." />
+      <PageHeader eyebrow="Chapter 01" title="A Semester Abroad" lede="University of St. Gallen, Switzerland. Ten countries in one classroom. Nowhere to hide." />
       <section className="px-6 md:px-12 max-w-6xl mx-auto">
         <div className="grid grid-cols-3 gap-3 md:gap-5 mb-16">
           {tiles.map((src, i) => (
@@ -35,7 +35,7 @@ function Page() {
             I completed an exchange semester at the University of St. Gallen, Switzerland, one of Europe&rsquo;s top-ranked business schools. The program was highly selective and intensely competitive, focusing on global strategy and finance in an international MBA cohort.
           </p>
           <p>
-            Walking into that classroom on day one, I was surrounded by people from 40+ countries, all equally ambitious, all equally sharp. I couldn&rsquo;t hide. I couldn&rsquo;t blend in. That forced me to show up differently than I had before. I had to articulate my ideas clearly, defend my perspectives, and learn to lead in spaces where I wasn&rsquo;t the expert.
+            Walking into that classroom on day one, I was surrounded by people from 10 countries, all equally ambitious, all equally sharp. I couldn&rsquo;t hide. I couldn&rsquo;t blend in. That forced me to show up differently than I had before. I had to articulate my ideas clearly, defend my perspectives, and learn to lead in spaces where I wasn&rsquo;t the expert.
           </p>
           <p>
             By the end of the semester, I realized something fundamental: the best growth happens when you push yourself into genuine discomfort. Switzerland wasn&rsquo;t just about finance or strategy. It was about discovering that I was capable of more than I thought.
