@@ -64,9 +64,9 @@ function Page() {
       <section className="px-6 md:px-12 max-w-6xl mx-auto mt-24 pt-16 border-t border-rule">
         <div className="mb-10">
           <h2 className="serif text-3xl md:text-5xl">
-            My <span className="rainbow-text italic">gay</span> job.
+            My <span className="rainbow-text italic">Gay</span> Job.
           </h2>
-          <div className="eyebrow mt-3">LGBTQIA+ Inclusion Council member</div>
+          <div className="eyebrow mt-3">LGBTQIA+ Inclusion Council Member</div>
         </div>
         <div className="grid md:grid-cols-[1fr_2fr] gap-10 items-start">
           <div className="aspect-[3/4] overflow-hidden grain">
