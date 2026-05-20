@@ -53,17 +53,19 @@ function Page() {
                 <a href={r.href} target="_blank" rel="noreferrer" className="text-sm text-accent mt-3 inline-block">Visit {r.company} ↗</a>
               )}
             </div>
-            <div className="space-y-5 text-foreground/85 leading-relaxed text-justify hyphens-auto">
-              <p>{r.body}</p>
-              {r.links && (
-                <ul className="space-y-1 text-sm">
-                  {r.links.map((l) => (
-                    <li key={l.href}>
-                      <a href={l.href} target="_blank" rel="noreferrer" className="text-accent hover:underline">{l.label} ↗</a>
-                    </li>
-                  ))}
-                </ul>
-              )}
+            <div className="flex flex-col justify-between text-foreground/85 leading-relaxed text-justify hyphens-auto h-full">
+              <div className="space-y-5">
+                <p>{r.body}</p>
+                {r.links && (
+                  <ul className="space-y-1 text-sm">
+                    {r.links.map((l) => (
+                      <li key={l.href}>
+                        <a href={l.href} target="_blank" rel="noreferrer" className="text-accent hover:underline">{l.label} ↗</a>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
               <div className="mt-6 pt-6 border-t border-rule">
                 <div className="eyebrow mb-2">Key lesson</div>
                 <p className="serif italic text-xl leading-snug">{r.lesson}</p>
