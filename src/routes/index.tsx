@@ -77,7 +77,7 @@ function Index() {
 
           {/* Right: text */}
           <div>
-            <div className="eyebrow mb-6">— Hello</div>
+            
             <h1 className="serif text-5xl md:text-7xl lg:text-8xl leading-[0.92]">
               Yogitha Kaushik.
             </h1>
@@ -126,7 +126,7 @@ function Index() {
       <section id="journey" className="px-6 md:px-12 pt-24 pb-16 max-w-7xl mx-auto border-t border-rule">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
           <div>
-            <div className="eyebrow mb-3">— Section 01</div>
+            
             <h2 className="serif text-5xl md:text-6xl leading-tight max-w-2xl">My journey so far.</h2>
           </div>
           <p className="text-muted-foreground max-w-sm">
@@ -144,7 +144,7 @@ function Index() {
       <section id="projects" className="px-6 md:px-12 pt-24 pb-16 max-w-7xl mx-auto border-t border-rule">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
           <div>
-            <div className="eyebrow mb-3">— Section 02</div>
+            
             <h2 className="serif text-5xl md:text-6xl leading-tight max-w-2xl">Things I am building.</h2>
           </div>
         </div>

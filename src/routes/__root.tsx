@@ -74,8 +74,7 @@ function SiteHeader() {
   const loc = useLocation();
   const onHome = loc.pathname === "/";
   return (
-    <header className="px-6 md:px-12 py-6 flex items-center justify-between">
-      <Link to="/" className="serif text-xl md:text-2xl tracking-tight">Yogitha Kaushik</Link>
+    <header className="px-6 md:px-12 py-6 flex items-center justify-end">
       <nav className="flex gap-5 md:gap-8 text-sm">
         <Link to="/" className="hover:text-accent transition-colors">Home</Link>
         <a href={onHome ? "#journey" : "/#journey"} className="hover:text-accent transition-colors">Journey</a>
