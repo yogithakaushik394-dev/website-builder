@@ -167,9 +167,8 @@ function Index() {
                 { label: "Ways of Working", items: ["Reverse Mentoring", "Community Building", "Facilitation", "Adaptability", "Attention to Detail", "Problem Solving", "Comfort with Ambiguity"] },
               ],
             },
-          ].map((col, i) => (
+          ].map((col) => (
             <article key={col.title} className="bg-paper p-8 md:p-10 flex flex-col">
-              <div className="eyebrow mb-4">Cluster 0{i + 1}</div>
               <h3 className="serif text-3xl mb-6">{col.title}</h3>
               <div className="space-y-6">
                 {col.groups.map((g) => (
