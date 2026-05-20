@@ -18,6 +18,7 @@ const orgs = [
     name: "Goodfoot",
     role: "Marketing & Communications volunteer",
     image: imgGoodfoot,
+    fit: "contain" as const,
     body: "Volunteer supporting marketing and communications for Goodfoot, an organization advancing social impact through strategic storytelling. I developed marketing materials and case studies for their website, helping articulate the organization's mission and impact to their community.",
   },
   {
@@ -48,7 +49,7 @@ function Page() {
           {orgs.map((o) => (
             <div key={o.name}>
               <div className="aspect-[16/10] overflow-hidden grain mb-5 bg-paper">
-                <img src={o.image ?? img} alt={o.name} loading="lazy" className="w-full h-full object-contain" />
+                <img src={o.image ?? img} alt={o.name} loading="lazy" className={`w-full h-full ${o.fit === "contain" ? "object-contain p-6" : "object-cover"}`} />
               </div>
               <h2 className="serif text-3xl md:text-4xl leading-tight">{o.name}</h2>
               <div className="eyebrow mt-2">{o.role}</div>
