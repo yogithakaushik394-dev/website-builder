@@ -21,7 +21,7 @@ function Page() {
   const tiles = [img1, img2, img3, img4, img5, img6];
   return (
     <article>
-      <PageHeader eyebrow="Chapter 01" title="A Semester Abroad" lede="University of St. Gallen, Switzerland. Ten countries in one classroom. Nowhere to hide." />
+      <PageHeader eyebrow="Chapter 01" title="A Semester Abroad" />
       <section className="px-6 md:px-12 max-w-6xl mx-auto">
         <div className="grid grid-cols-3 gap-3 md:gap-5 mb-16">
           {tiles.map((src, i) => (
