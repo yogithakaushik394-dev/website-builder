@@ -68,11 +68,11 @@ function Page() {
           </h2>
           <div className="eyebrow mt-3">LGBTQIA+ Inclusion Council Member</div>
         </div>
-        <div className="grid md:grid-cols-[1fr_2fr] gap-10 items-start">
-          <div className="aspect-[3/4] overflow-hidden grain">
+        <div className="grid md:grid-cols-[1fr_2fr] gap-10 items-stretch">
+          <div className="overflow-hidden grain">
             <img src={imgGayJob} alt="" loading="lazy" className="w-full h-full object-cover" />
           </div>
-          <ul className="space-y-6">
+          <ul className="flex flex-col justify-between gap-6">
             {gayJob.map((line, i) => (
               <li key={i} className="flex gap-5 text-foreground/85 leading-relaxed text-justify hyphens-auto">
                 <span className="serif text-accent text-2xl leading-none mt-1">0{i + 1}</span>
