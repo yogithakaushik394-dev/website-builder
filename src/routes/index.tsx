@@ -41,7 +41,7 @@ const projects = [
   },
   {
     name: "D&D Website",
-    desc: "A dark, immersive website where D&D players and Dungeon Masters can draw from magical decks, roll on wild magic tables, and play classic Forgotten Realms tavern games all in one place. Built for the community, by someone who lives in it.",
+    desc: "An immersive website.",
   },
 ];
 
