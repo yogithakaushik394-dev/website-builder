@@ -40,7 +40,7 @@ const gayJob = [
 function Page() {
   return (
     <article>
-      <PageHeader eyebrow="Chapter 03" title="Deloitte" lede="Five years. Three continents. Two jobs that mattered." />
+      <PageHeader eyebrow="Chapter 03" title="Deloitte" />
 
       <section className="px-6 md:px-12 max-w-6xl mx-auto">
         <div className="mb-10">
