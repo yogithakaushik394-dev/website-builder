@@ -49,7 +49,7 @@ function Page() {
                 <a href={r.href} target="_blank" rel="noreferrer" className="text-sm text-accent mt-3 inline-block">Visit {r.company} ↗</a>
               )}
             </div>
-            <div className="space-y-5 text-foreground/85 leading-relaxed">
+            <div className="space-y-5 text-foreground/85 leading-relaxed text-justify hyphens-auto">
               <p>{r.body}</p>
               {r.links && (
                 <ul className="space-y-1 text-sm">
