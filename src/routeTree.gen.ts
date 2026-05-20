@@ -15,7 +15,6 @@ import { Route as JourneySemesterAbroadRouteImport } from './routes/journey.seme
 import { Route as JourneyRotmanRouteImport } from './routes/journey.rotman'
 import { Route as JourneyInternshipsRouteImport } from './routes/journey.internships'
 import { Route as JourneyDeloitteRouteImport } from './routes/journey.deloitte'
-import { Route as ApiPublicLinkedinRouteImport } from './routes/api.public.linkedin'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -47,11 +46,6 @@ const JourneyDeloitteRoute = JourneyDeloitteRouteImport.update({
   path: '/journey/deloitte',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ApiPublicLinkedinRoute = ApiPublicLinkedinRouteImport.update({
-  id: '/api/public/linkedin',
-  path: '/api/public/linkedin',
-  getParentRoute: () => rootRouteImport,
-} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -60,7 +54,6 @@ export interface FileRoutesByFullPath {
   '/journey/rotman': typeof JourneyRotmanRoute
   '/journey/semester-abroad': typeof JourneySemesterAbroadRoute
   '/journey/what-makes-me-tick': typeof JourneyWhatMakesMeTickRoute
-  '/api/public/linkedin': typeof ApiPublicLinkedinRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -69,7 +62,6 @@ export interface FileRoutesByTo {
   '/journey/rotman': typeof JourneyRotmanRoute
   '/journey/semester-abroad': typeof JourneySemesterAbroadRoute
   '/journey/what-makes-me-tick': typeof JourneyWhatMakesMeTickRoute
-  '/api/public/linkedin': typeof ApiPublicLinkedinRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -79,7 +71,6 @@ export interface FileRoutesById {
   '/journey/rotman': typeof JourneyRotmanRoute
   '/journey/semester-abroad': typeof JourneySemesterAbroadRoute
   '/journey/what-makes-me-tick': typeof JourneyWhatMakesMeTickRoute
-  '/api/public/linkedin': typeof ApiPublicLinkedinRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -90,7 +81,6 @@ export interface FileRouteTypes {
     | '/journey/rotman'
     | '/journey/semester-abroad'
     | '/journey/what-makes-me-tick'
-    | '/api/public/linkedin'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -99,7 +89,6 @@ export interface FileRouteTypes {
     | '/journey/rotman'
     | '/journey/semester-abroad'
     | '/journey/what-makes-me-tick'
-    | '/api/public/linkedin'
   id:
     | '__root__'
     | '/'
@@ -108,7 +97,6 @@ export interface FileRouteTypes {
     | '/journey/rotman'
     | '/journey/semester-abroad'
     | '/journey/what-makes-me-tick'
-    | '/api/public/linkedin'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -118,7 +106,6 @@ export interface RootRouteChildren {
   JourneyRotmanRoute: typeof JourneyRotmanRoute
   JourneySemesterAbroadRoute: typeof JourneySemesterAbroadRoute
   JourneyWhatMakesMeTickRoute: typeof JourneyWhatMakesMeTickRoute
-  ApiPublicLinkedinRoute: typeof ApiPublicLinkedinRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -165,13 +152,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof JourneyDeloitteRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/api/public/linkedin': {
-      id: '/api/public/linkedin'
-      path: '/api/public/linkedin'
-      fullPath: '/api/public/linkedin'
-      preLoaderRoute: typeof ApiPublicLinkedinRouteImport
-      parentRoute: typeof rootRouteImport
-    }
   }
 }
 
@@ -182,7 +162,6 @@ const rootRouteChildren: RootRouteChildren = {
   JourneyRotmanRoute: JourneyRotmanRoute,
   JourneySemesterAbroadRoute: JourneySemesterAbroadRoute,
   JourneyWhatMakesMeTickRoute: JourneyWhatMakesMeTickRoute,
-  ApiPublicLinkedinRoute: ApiPublicLinkedinRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
