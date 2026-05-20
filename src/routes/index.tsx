@@ -137,6 +137,59 @@ function Index() {
         </div>
       </section>
 
+      {/* SKILLS */}
+      <section id="skills" className="px-6 md:px-12 pt-24 pb-16 max-w-7xl mx-auto border-t border-rule">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+          <div>
+            <h2 className="serif text-5xl md:text-6xl leading-tight max-w-2xl">Skills.</h2>
+          </div>
+        </div>
+        <div className="grid md:grid-cols-3 gap-px bg-rule border border-rule">
+          {[
+            {
+              title: "Technology & Systems",
+              groups: [
+                { label: "Enterprise Systems", items: ["SAP S/4HANA", "SAP Fiori", "SuccessFactors"] },
+                { label: "Risk & Compliance", items: ["GRC", "IT General Controls", "Segregation of Duties", "Risk Identification and Control Testing"] },
+                { label: "Tools & Platforms", items: ["Excel", "JIRA", "Microsoft Office Suite", "Tableau", "Prompt Engineering", "Vibe Coding"] },
+              ],
+            },
+            {
+              title: "Strategy & Execution",
+              groups: [
+                { label: "Program & Project Management", items: ["Cross-functional Collaboration", "Go-Live and Hypercare", "Change Management", "Requirements Gathering", "Process Improvement", "Vendor Management"] },
+                { label: "Stakeholder Leadership", items: ["Executive Presentations", "Client Relationship Management", "Team Leadership", "Stakeholder Management", "Negotiation", "Influence"] },
+              ],
+            },
+            {
+              title: "Soft Skills",
+              groups: [
+                { label: "Ways of Working", items: ["Reverse Mentoring", "Community Building", "Facilitation", "Adaptability", "Attention to Detail", "Problem Solving", "Comfort with Ambiguity"] },
+              ],
+            },
+          ].map((col, i) => (
+            <article key={col.title} className="bg-paper p-8 md:p-10 flex flex-col">
+              <div className="eyebrow mb-4">Cluster 0{i + 1}</div>
+              <h3 className="serif text-3xl mb-6">{col.title}</h3>
+              <div className="space-y-6">
+                {col.groups.map((g) => (
+                  <div key={g.label}>
+                    <div className="text-xs uppercase tracking-[0.15em] text-muted-foreground mb-3">{g.label}</div>
+                    <div className="flex flex-wrap gap-2">
+                      {g.items.map((it) => (
+                        <span key={it} className="inline-block px-3 py-1 text-xs border border-ink/20 hover:border-accent hover:text-accent transition-colors">
+                          {it}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
       {/* PROJECTS */}
       <section id="projects" className="px-6 md:px-12 pt-24 pb-16 max-w-7xl mx-auto border-t border-rule">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
