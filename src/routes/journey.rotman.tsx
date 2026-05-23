@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { PageHeader } from "@/components/PageHeader";
 import imgPride from "@/assets/rotman-pride.jpg";
 import imgDistinction from "@/assets/deloitte-distinction.jpg";
-
+//hello :)
 export const Route = createFileRoute("/journey/rotman")({
   head: () => ({
     meta: [
