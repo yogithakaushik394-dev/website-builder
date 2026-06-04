@@ -40,8 +40,8 @@ const projects = [
     desc: "Currently in beta testing. Co-building a conversational AI agent that learns your taste. Tell it what you are craving, your dietary constraints, where you are, and Buzz recommends restaurants you will actually want to go to. No endless scrolling. No algorithm guessing. Just recommendations that fit your life.",
   },
   {
-    name: "D&D Website",
-    desc: "A website where D&D players and Dungeon Masters can draw from magical decks, roll on wild magic tables, and play classic Forgotten Realms tavern games all in one place.",
+    name: "German Language Learning",
+    desc: "A website that helps you learn German through immersion and conversation.",
   },
 ];
 
