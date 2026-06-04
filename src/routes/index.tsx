@@ -36,8 +36,8 @@ const projects = [
     desc: "Co-building an AI-powered job application and career navigation platform. Upload your resume, and Robin analyzes job descriptions, extracts skill requirements, identifies gaps, and matches you with opportunities tailored to your strengths. Built to turn job searching from overwhelming to strategic.",
   },
   {
-    name: "Dine",
-    desc: "Co-building a conversational AI agent that learns your taste. Tell it what you are craving, your dietary constraints, where you are, and Dine recommends restaurants you will actually want to go to. No endless scrolling. No algorithm guessing. Just recommendations that fit your life.",
+    name: "Buzz",
+    desc: "Currently in beta testing. Co-building a conversational AI agent that learns your taste. Tell it what you are craving, your dietary constraints, where you are, and Buzz recommends restaurants you will actually want to go to. No endless scrolling. No algorithm guessing. Just recommendations that fit your life.",
   },
   {
     name: "D&D Website",
