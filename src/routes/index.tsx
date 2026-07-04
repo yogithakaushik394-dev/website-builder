@@ -38,6 +38,8 @@ const projects = [
   {
     name: "Buzz",
     desc: "Currently in beta testing. Co-building a conversational AI agent that learns your taste. Tell it what you are craving, your dietary constraints, where you are, and Buzz recommends restaurants you will actually want to go to. No endless scrolling. No algorithm guessing. Just recommendations that fit your life.",
+    android: "https://play.google.com/apps/internaltest/4701549296641608765",
+    testflight: "https://testflight.apple.com/join/nzyN4X9M",
   },
   {
     name: "Language Learning",
