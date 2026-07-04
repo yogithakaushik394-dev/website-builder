@@ -69,6 +69,13 @@ function Index() {
             <div className="mt-8 max-w-md mx-auto lg:mx-0">
               <div className="eyebrow mb-3">Yogitha Kaushik</div>
               <a
+                href="#projects"
+                className="group inline-flex items-center justify-between w-full px-6 py-4 bg-accent text-paper hover:bg-ink transition-colors mb-3"
+              >
+                <span className="text-sm tracking-wide uppercase">See what I am building</span>
+                <span className="text-lg group-hover:translate-x-1 transition-transform">→</span>
+              </a>
+              <a
                 href="#journey"
                 className="group inline-flex items-center justify-between w-full px-6 py-4 bg-ink text-paper hover:bg-accent transition-colors"
               >
