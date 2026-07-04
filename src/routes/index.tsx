@@ -201,11 +201,23 @@ function Index() {
               <div className="eyebrow mb-4">Project 0{i + 1}</div>
               <h3 className="serif text-4xl mb-4">{p.name}</h3>
               <p className="text-sm text-foreground/80 leading-relaxed flex-1 text-justify hyphens-auto">{p.desc}</p>
-              {p.href && (
-                <a href={p.href} target="_blank" rel="noreferrer" className="mt-6 text-sm text-accent inline-flex items-center gap-1 hover:gap-2 transition-all">
-                  Visit project <span aria-hidden>↗</span>
-                </a>
-              )}
+              <div className="mt-6 flex flex-col gap-3">
+                {p.href && (
+                  <a href={p.href} target="_blank" rel="noreferrer" className="text-sm text-accent inline-flex items-center gap-1 hover:gap-2 transition-all">
+                    Visit project <span aria-hidden>↗</span>
+                  </a>
+                )}
+                {p.android && (
+                  <a href={p.android} target="_blank" rel="noreferrer" className="text-sm text-accent inline-flex items-center gap-1 hover:gap-2 transition-all">
+                    Android beta <span aria-hidden>↗</span>
+                  </a>
+                )}
+                {p.testflight && (
+                  <a href={p.testflight} target="_blank" rel="noreferrer" className="text-sm text-accent inline-flex items-center gap-1 hover:gap-2 transition-all">
+                    iOS TestFlight <span aria-hidden>↗</span>
+                  </a>
+                )}
+              </div>
             </article>
           ))}
         </div>
