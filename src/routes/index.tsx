@@ -43,6 +43,7 @@ const projects = [
   },
   {
     name: "Language Learning",
+    href: "https://german-website-1wme.vercel.app/",
     desc: "A website that helps you learn German language through immersion and conversation.",
   },
 ];
