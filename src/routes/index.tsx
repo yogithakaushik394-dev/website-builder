@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Mail, Linkedin } from "lucide-react";
+import { Mail, Linkedin, Newspaper } from "lucide-react";
 import { Chip } from "@/components/Chip";
 import portraitFormal from "@/assets/portrait-formal.jpg";
 import portraitCasual from "@/assets/portrait-casual.jpg";
