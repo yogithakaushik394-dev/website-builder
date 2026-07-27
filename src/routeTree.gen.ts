@@ -10,30 +10,20 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
-import { Route as JourneyWhatMakesMeTickRouteImport } from './routes/journey.what-makes-me-tick'
-import { Route as JourneySemesterAbroadRouteImport } from './routes/journey.semester-abroad'
-import { Route as JourneyRotmanRouteImport } from './routes/journey.rotman'
-import { Route as JourneyInternshipsRouteImport } from './routes/journey.internships'
 import { Route as JourneyDeloitteRouteImport } from './routes/journey.deloitte'
+import { Route as JourneyInternshipsRouteImport } from './routes/journey.internships'
+import { Route as JourneyRotmanRouteImport } from './routes/journey.rotman'
+import { Route as JourneySemesterAbroadRouteImport } from './routes/journey.semester-abroad'
+import { Route as JourneyWhatMakesMeTickRouteImport } from './routes/journey.what-makes-me-tick'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const JourneyWhatMakesMeTickRoute = JourneyWhatMakesMeTickRouteImport.update({
-  id: '/journey/what-makes-me-tick',
-  path: '/journey/what-makes-me-tick',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const JourneySemesterAbroadRoute = JourneySemesterAbroadRouteImport.update({
-  id: '/journey/semester-abroad',
-  path: '/journey/semester-abroad',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const JourneyRotmanRoute = JourneyRotmanRouteImport.update({
-  id: '/journey/rotman',
-  path: '/journey/rotman',
+const JourneyDeloitteRoute = JourneyDeloitteRouteImport.update({
+  id: '/journey/deloitte',
+  path: '/journey/deloitte',
   getParentRoute: () => rootRouteImport,
 } as any)
 const JourneyInternshipsRoute = JourneyInternshipsRouteImport.update({
@@ -41,9 +31,19 @@ const JourneyInternshipsRoute = JourneyInternshipsRouteImport.update({
   path: '/journey/internships',
   getParentRoute: () => rootRouteImport,
 } as any)
-const JourneyDeloitteRoute = JourneyDeloitteRouteImport.update({
-  id: '/journey/deloitte',
-  path: '/journey/deloitte',
+const JourneyRotmanRoute = JourneyRotmanRouteImport.update({
+  id: '/journey/rotman',
+  path: '/journey/rotman',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const JourneySemesterAbroadRoute = JourneySemesterAbroadRouteImport.update({
+  id: '/journey/semester-abroad',
+  path: '/journey/semester-abroad',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const JourneyWhatMakesMeTickRoute = JourneyWhatMakesMeTickRouteImport.update({
+  id: '/journey/what-makes-me-tick',
+  path: '/journey/what-makes-me-tick',
   getParentRoute: () => rootRouteImport,
 } as any)
 
@@ -117,25 +117,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/journey/what-makes-me-tick': {
-      id: '/journey/what-makes-me-tick'
-      path: '/journey/what-makes-me-tick'
-      fullPath: '/journey/what-makes-me-tick'
-      preLoaderRoute: typeof JourneyWhatMakesMeTickRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/journey/semester-abroad': {
-      id: '/journey/semester-abroad'
-      path: '/journey/semester-abroad'
-      fullPath: '/journey/semester-abroad'
-      preLoaderRoute: typeof JourneySemesterAbroadRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/journey/rotman': {
-      id: '/journey/rotman'
-      path: '/journey/rotman'
-      fullPath: '/journey/rotman'
-      preLoaderRoute: typeof JourneyRotmanRouteImport
+    '/journey/deloitte': {
+      id: '/journey/deloitte'
+      path: '/journey/deloitte'
+      fullPath: '/journey/deloitte'
+      preLoaderRoute: typeof JourneyDeloitteRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/journey/internships': {
@@ -145,11 +131,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof JourneyInternshipsRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/journey/deloitte': {
-      id: '/journey/deloitte'
-      path: '/journey/deloitte'
-      fullPath: '/journey/deloitte'
-      preLoaderRoute: typeof JourneyDeloitteRouteImport
+    '/journey/rotman': {
+      id: '/journey/rotman'
+      path: '/journey/rotman'
+      fullPath: '/journey/rotman'
+      preLoaderRoute: typeof JourneyRotmanRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/journey/semester-abroad': {
+      id: '/journey/semester-abroad'
+      path: '/journey/semester-abroad'
+      fullPath: '/journey/semester-abroad'
+      preLoaderRoute: typeof JourneySemesterAbroadRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/journey/what-makes-me-tick': {
+      id: '/journey/what-makes-me-tick'
+      path: '/journey/what-makes-me-tick'
+      fullPath: '/journey/what-makes-me-tick'
+      preLoaderRoute: typeof JourneyWhatMakesMeTickRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
