@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Mail, Linkedin } from "lucide-react";
+import { Mail, Linkedin, Newspaper } from "lucide-react";
 import { Chip } from "@/components/Chip";
 import portraitFormal from "@/assets/portrait-formal.jpg";
 import portraitCasual from "@/assets/portrait-casual.jpg";
@@ -105,6 +105,14 @@ function Index() {
                 className="inline-flex items-center gap-2 px-4 py-2 text-xs uppercase tracking-[0.15em] border border-ink/80 hover:bg-ink hover:text-paper transition-colors"
               >
                 <Linkedin size={14} /> LinkedIn
+              </a>
+              <a
+                href="https://vested-interest.beehiiv.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2 text-xs uppercase tracking-[0.15em] border border-ink/80 hover:bg-ink hover:text-paper transition-colors"
+              >
+                <Newspaper size={14} /> Newsletter
               </a>
             </div>
             <div className="mt-10 space-y-6 text-lg text-foreground/85 leading-relaxed max-w-xl text-justify hyphens-auto">
